@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../CSS/prontuario.css">
+  <link rel="stylesheet" href="../CSS/leito.css">
+  <script src="../JS/resgate.js"></script>
+  <title>Convênio Clínico</title>
+</head>
+<body class="back">
+    <div class="caixa">
+        <div id="input">
+            <div >
+                <h1 class="tit-ficha">Ficha Admissão Médica</h1>
+            <div>   
+                <div class="tamanho">
+                    <div class="left ">
+                        <img src="../Imagens/Imagem1.png">
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="linha">
+                                <label for="CNS">CNS</label>
+                                <input class="caixa-inicio" type="text" name="CNS" placeholder="CNS:">
+                            </div>
+                            <div class="linha">
+                                <label class="c1" for="CONVÊNIO">CONVÊNIO</label>
+                                <input class="caixa-inicio" type="text" name="CONVÊNIO" placeholder="CONVÊNIO:" id="conveniof"> <br></br>
+                            </div>
+                        </div>
+                        <div >
+                            <div class="linha">
+                                <label for="CPF">CPF</label>
+                                <input class="caixa-inicio" type="text" name="CPF" placeholder="CPF:" id="cpff">
+                            </div>
+                            <div class="linha">
+                                <label class="c2" for="LEITO">LEITO</label>
+                                <input class="caixa-inicio" type="text" name="LEITO" placeholder="LEITO:" id="leitof"> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+        
+                <div class="inicio1">
+                    <div class="dados">
+                        <label for="Pessoais">DADOS PESSOAIS</label>
+                    </div>
+                    <form action="valores" class="fonte">
+                        <div class="tamanho1 linhaAltura">
+                            <div class="bloco">
+                                <div class="size" >
+                                    <div class="size1" >
+                                        <label class="inicio1"for="NOME">Nome:</label>
+                                        <input class="NOME" type="text" name="NOME" id="nomef" >
+                                    </div>
+                                    <div class="size2">
+                                        <label for="IDADE">Idade:</label>
+                                        <input class="IDADE" type="text" name="IDADE" id="idadef" >
+                                    </div>
+                                    <div class="size3">
+                                        <label for="DATA">Data de Nascimento:</label>
+                                        <input class="DATA" type="text" name="DATA" id="nascf" >
+                                    </div>                  
+                                </div>
+                                <div class="size">
+                                    <div class="size4">
+                                        <label class="inicio1" for="ENDERECO">Endereço:</label>
+                                        <input class="ENDERECO" type="text" name="ENDEREÇO" id="enderecof">
+                                    </div>
+                                    
+                                    <div class="size5">
+                                        <label for="BAIRRO">Bairro:</label>
+                                        <input class="BAIRRO" type="text" name="BAIRRO" id="bairrof">
+                                    </div>           
+                                </div>
+                                <div class="size">
+                                    <div class="size6">
+                                        <label  class="inicio1" for="CIDADE">Cidade:</label>
+                                        <input class="CIDADE" type="text" name="CIDADE" id="cidadef">
+                                    </div>
+                                    <div class="size7">
+                                        <label class="d2"for="UF">UF:</label>
+                                        <input class="UF" type="text" name="UF" id="uff">
+                                    </div>
+                                    <div class="size8">
+                                        <label for="FONE">Fone:</label>
+                                        <input class="FONE" type="text" name="FONE" id="fonef">
+                                    </div>
+                                    <div class="size9">
+                                        <label for="RG">RG:</label>
+                                        <input class="RG" type="text" name="RG" id="rgf">
+                                    </div>       
+                                </div>
+                            </div>       
+                            <div class="bloco1">
+                                <div class="size">
+                                    <label for="SEXO">Sexo:</label>
+                                    <input class="SEXO" type="text" name="SEXO" id="sexof" ><br>
+                                
+                                    <label for="ZONA">Zona:</label>
+                                    <input class="ZONA" type="text" name="ZONA" id="zonaf"><br> 
+                                
+                                    <label for="EXP">Exp:</label>
+                                    <input class="EXP" type="text" name="EXP" id="dataExpf"><br>
+                                </div>    
+                            </div>         
+                        </div>
+                        <div class="tamanho1" >
+                            <div class="coluna">
+                                <label class="inicio1" for="CIVIL">Est. Civil:</label>
+                                <input class="CIVIL" type="text" name="CIVIL">
+                            </div>
+                            <div class="coluna1">
+                                <label for="PROFISSÃO">Profissão:</label>
+                                <input class="PROFISSAO" type="text" name="PROFISSÃO" id="profissaof">
+                            </div> 
+                            <div class="coluna2">
+                                <label for="MÃE">Nome da Mãe:</label>
+                                <input class="MAE" type="text" name="MÃE" id="nomeMaef">
+                            </div>
+                        </div>  
+                    </form>
+                </div>          
+            </div>
+            <div >
+                <div >
+                    <div class="tamanho1">
+                        <div class="linha1">
+                            <div class="linhaAltura fonte">
+                                <label>Responsável: <hr></label><br>
+                                <label>Diagnóstico Inicial:<hr></label><br>
+                                <label for="atendimento">Atendimento:</label>
+                                <input class="ATENDIMENTO" type="text" nome="atendimento" id="atendimentof">
+                                <label for="Médico">Médico:</label>
+                                <input class="MEDICO" type="text"nome=Médico id="medicof"><br>
+                                <label>Obs: <hr></label>
+                            </div>
+                        </div>
+                        <div class="linha2">
+                            <div class="checkbox">
+                                <span>Alta:</span>
+                                <div class="parte1">
+                                    <input type="checkbox" name="Melhorada"> 
+                                    <span>Melhorada</span><br>
+                                    <input class="Periodo"type="checkbox" name="Periodo">
+                                    <span>À  Pedido</span><br>
+                                    <span>Data:___/___/___</span>
+                                </div>
+                                <div class="parte1">
+                                    <input class="Indisciplina" type="checkbox" name="Indisciplina">
+                                    <label>Por Indisciplina</label>
+                                    <br><input class="obito" type="checkbox" name="Obito">
+                                    <span>Óbito</span><br>
+                                    <input class="transferencia" type="checkbox" name="Transferencia">
+                                    <span>Transferência</spanor=>
+                                </div>
+                                <br><br>
+                                <p>Horas ___:___</p>
+                            </div>
+                        </div>
+                    </div>
+        
+            
+            <div>
+                <div class="dados">
+                    <label for="ADMISSÃO">ADMISSÃO MÉDICA</label>
+                </div>
+                    <div class="borda1">
+                    
+                        
+                    <span>Q.P:<hr></span><br>
+                    <span>H.D.A:<hr></span>
+                    <span><hr></span>
+                    <span><hr></span>
+                    <span>Exame Físico:<hr></span>
+                    </div>
+                    <br>
+        
+            </div>
+            <div>
+                <div>
+                    <div class="borda1">
+                <span>PA:______X______mm/Hg </span>
+                <span> FC:___________ bpm</span>
+                <span> T(C°):___________</span>
+                <span> FR:___________ Ipm</span>
+                <p>ID: <hr></p>
+                <p>Conduta/Prescrição: <hr></p>
+                <p>Horário:<br>__________________________________________&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                </div>
+            </div>
+                
+            </div>
+            <br><br>
+            <div id ="espaco"></div>
+                <table id="tabela">
+                    <tr>
+                        <th>DATA</th>
+                        <th>HORA</th>
+                        <td >PRESCRIÇÃO MÉDICA </td>
+                        <th>HORÁRIO</th>
+                        <td >EVOLUÇÃO MÉDICA </td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp</th>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <!--LEITO-->
+        <br><br><br><br>
+        <div id="input-leito">
+            <div class="caixa-leito">
+                <div class="tamanho-leito">
+                    <div class="linha-leito">
+                        <img src="../Imagens/Imagemleito.jpg" >
+                    </div>
+                    <div class="linha1-leito">
+                        <label class="borda-leito" for="leito">LEITO:</label><br>
+                        <input class="altura-leito" type="text" name="leito" id="leitof">      
+                    </div>
+                    <div class="linha2-leito">
+                        <label class="borda-leito" for="leito1">CONVÊNIO:</label><br>
+                        <input class="altura1-leito" type="text" name="leito1" id="conveniof">
+                    </div>
+                </div>
+                <div class="tamanho-leito">
+                    <div class="inline-leito">
+                        <label for="paciente">PACIENTE:</label>
+                    </div>
+                    <div class="coluna-leito">
+                        <input class="paciente-leito" type="text" name="paciente" id="nomef">
+                    </div>   
+                </div>
+                <div class="tamanho-leito">
+                    <div class="coluna1-leito">
+                        <label for="dn">DN:</label>
+                        <input class="dn-leito" type="text" name="dn" id="nascf" >
+                    </div>
+                    <div class="coluna1-leito">
+                        <label for="idade">IDADE:</label>
+                        <input class="dn-leito" type="text" name="idade"id="idadef">
+                    </div>
+                    <div class="coluna2-leito">
+                        <label for="data"></label>
+                        <input class="dn1-leito" type="text" name="data" id="atendimentof">
+                    </div>
+                </div>
+                <div class="tamanho-leito">
+                    <div class="esquerda-leito">
+                        <label for="alergia">ALERGIA:</label>
+                        <input class="alergia-leito" type="text" name="alergia">
+                    </div>
+                    <div class="direita-leito">
+                        <label for="exames">EXAMES:</label>
+                        <input class="exame-leito" type="text" name="exames">
+                    </div>
+                </div>
+                <div class="tamanho-leito">
+                    <div class="coluna3-leito">
+                        <label for="ssvv">SSVV DESEJÁVEIS &nbsp&nbsp PA:</label>
+                        <input class="pa-leito" type="text" name="pa">
+                    </div>
+                    <div class="coluna4-leito">
+                        <label for="t">T:</label>
+                        <input class="T-leito" type="text" name="t">
+                    </div>
+                    <div class="coluna5-leito">
+                        <label class="ssvv" for="gc">GC:</label>
+                        <input class="gc-leito" type="text" name="gc">
+                    </div>
+                
+                </div>
+                <div class="tamanho-leito">
+                    <table id="tabela-leito">
+                        <tr>
+                            <th>RISCO DE QUEDA</td>
+                            <th>RISCO DE TVP</td>
+                            <th>RISCO DE BRONCOASPIRAÇÃO</td>
+                            <th>RISCO NUTRICIONAL</td>
+                            <th>RISCO DE LESÃO POR PRESSÃO</th>
+                            <th>RISCO DE FLEBITE</th>
+                        </tr>
+                        <tr>
+                            <th>&nbsp</th>
+                            <th></th>
+                            <th></th>
+                            <th></t>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tamanho-leito">
+                    <label for="riscos">OUTROS RISCOS:</label>
+                    <input class="riscos-leito" type="text" name="riscos">
+                    <script src="../JS/resgate.js"></script>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+<footer>         
+    <script src="../JS/prontuario.js"></script>
+    <script src="../JS/imprimir.js"></script> 
+</footer>
+</html>
